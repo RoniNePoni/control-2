@@ -1,0 +1,101 @@
+h2 {
+  position: relative;
+  margin-top: -622px;
+  margin-left: 226px;
+}
+
+.adress {
+  top: 67px;
+  left: 135px;
+  width: 500px;
+  position: absolute;
+}
+.data {
+  top: 153px;
+  left: 136px;
+  width: 204px;
+  position: absolute;
+}
+
+.chislo {
+  position: absolute;
+  top: 0px;
+  left: 88px;
+  width: 204px;
+}
+
+.ok {
+  position: absolute;
+  top: 153px;
+  left: 384px;
+  width: 204px;
+}
+
+.cod {
+  margin-left: 10px;
+}
+
+.lastname {
+  position: absolute;
+  top: 403px;
+  left: 276px;
+  width: 204px;
+}
+
+.mylastname {
+  margin-left: 20px;
+}
+
+.name {
+  position: absolute;
+  top: 455px;
+  left: 276px;
+  width: 204px;
+}
+
+.my-name {
+  margin-left: 20px;
+}
+
+.surname {
+  position: absolute;
+  top: 487px;
+  left: 273px;
+  width: 204px;
+}
+
+.my-surname {
+  margin-left: 20px;
+}
+
+.gender {
+  position: absolute;
+  top: 511px;
+  left: 264px;
+  width: 204px;
+}
+
+.my-gender {
+  margin-left: 10px;
+}
+
+.birth-data {
+  position: absolute;
+  top: 506px;
+  left: 346px;
+  width: 130px;
+  line-height: 90%;
+}
+
+.birth-place {
+  position: absolute;
+  top: 535px;
+  left: 267px;
+  width: 131px;
+  line-height: 100%;
+}
+
+.solution_1 {
+  width: 50%;
+  margin-left: 651px;
+}

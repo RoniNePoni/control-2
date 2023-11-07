@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>passport_ru</title>
+  </head>
+
+  <body>
+    <button class="btn" onclick="document.location='passport-eng.html'">
+      Switch lang
+    </button>
+    <img src="pasport.png" alt="" />
+
+    <h2>Российская федерация</h2>
+
+    <p class="adress">
+      Паспорт выдан<span class="district">ГУ МВД ПО Г.МОСКВЕ </span>
+    </p>
+    <p class="data">Дата выдачи<span class="chislo">23.06.2018</span></p>
+    <p class="ok">Код подразделения<span class="cod">789-345</span></p>
+    <p class="lastname">Фамилия<span class="mylastname">Логинова</span></p>
+    <p class="name">Имя<span class="my-name">Вероника</span></p>
+    <p class="surname">Отчество<span class="my-surname">Сергеевна</span></p>
+    <p class="gender">Пол<span class="my-gender">жен</span></p>
+    <p class="birth-data">
+      Дата рождения<span class="my-data">17.08.2004</span>
+    </p>
+    <p class="birth-place">
+      Место рождения<span class="my-place">Москва</span>
+    </p>
+
+    <img class="solution_1" src="solution.png" alt="" />
+
+    <script>
+      // Получение информации из DOM
+      const surname = document.querySelector('.mylastname').innerText // Получаем фамилию
+      const firstName = document.querySelector('.my-name').innerText // Получаем имя
+      const birthDate = document.querySelector('.my-data').innerText // Получаем дату рождения
+
+      // Вывод данных в консоль для проверки
+      console.log('Фамилия:', surname)
+      console.log('Имя:', firstName)
+      console.log('Дата рождения:', birthDate)
+
+      // CLICK ON BUTTON
+      const button = document.querySelector('.btn')
+      button.addEventListener('click', function () {
+        console.log('click')
+      })
+    </script>
+  </body>
+</html>

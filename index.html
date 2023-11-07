@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Алгоритмическая задача</title>
+  </head>
+  <body>
+    <h2>Отправка алгоритмической задачи на сервер</h2>
+
+    <label for="numberInput">Введите число:</label><br />
+    <input type="text" id="numberInput" /><br /><br />
+
+    <button type="button" onclick="checkAndSend()">
+      Проверить и отправить на сервер
+    </button>
+    <p
+      id="response"
+      style="color: red; text-transform: uppercase; display: none"
+    ></p>
+
+    <script>
+      function checkAndSend() {
+        const number = parseFloat(document.getElementById('numberInput').value)
+
+        const responseText = document.getElementById('response')
+
+        if (number > 0) {
+          responseText.innerText = 'Перенаправление на сервер'
+          responseText.style.display = 'block'
+          setTimeout(function () {
+            window.location.href =
+              'https://www.google.com/search?q=%D0%BA%D0%BE%D1%82&sourceid=chrome&ie=UTF-8'
+          }, 2000)
+        } else {
+          responseText.innerText = 'Ответ нельзя отправить на сервер'
+          responseText.style.display = 'block'
+        }
+      }
+    </script>
+
+    <form action="solution.html">
+      <button>Решение</button>
+    </form>
+  </body>
+</html>
